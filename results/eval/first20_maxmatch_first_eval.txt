@@ -1,0 +1,136 @@
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+Transliteration Evaluation
+Matched: 10.0
+Missed: 60.0
+Exp. Correct Segmentations: 0.0
+Total: 70.0
+Matches(%): 14.285714285714285
+Misses(%): 85.71428571428571
+Accuracy(%): 89.74358974358975
+Precision(%):55.55555555555556
+Recall(%): 100.0
+F-Measure(%): 71.42857142857143
+G-Measure(%): 74.53559924999298
+TruePositive: 10.0
+FalsePositive: 8.0
+TrueNegative: 60.0
+FalseNegative: 0.0
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+Segmentation Evaluation
+Matched: 0.0
+Missed: 0.0
+Exp. Correct Segmentations: 0.0
+Total: 285.0
+Matches(%): 0.0
+Misses(%): 0.0
+Accuracy(%): 69.47368421052632
+Precision(%):35.199999999999996
+Recall(%): 88.0
+F-Measure(%): 50.285714285714285
+G-Measure(%): 55.65608681896347
+TruePositive: 44.0
+FalsePositive: 81.0
+TrueNegative: 154.0
+FalseNegative: 6.0
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+Boundary Based Evaluation
+Matched: 63.0
+Missed: 91.0
+Exp. Correct Segmentations: 63.0
+Total: 154.0
+Matches(%): 40.909090909090914
+Misses(%): 59.09090909090909
+Accuracy(%): 40.909090909090914
+Precision(%):42.857142857142854
+Recall(%): 90.0
+F-Measure(%): 58.06451612903225
+G-Measure(%): 62.10590034081188
+TruePositive: 63.0
+FalsePositive: 84.0
+TrueNegative: 0.0
+FalseNegative: 7.0
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+Word Boundary Base Evaluation
+Matched: 27.0
+Missed: 163.0
+Exp. Correct Segmentations: 27.0
+Total: 190.0
+Matches(%): 14.210526315789473
+Misses(%): 85.78947368421052
+Accuracy(%): 14.210526315789473
+Precision(%):18.367346938775512
+Recall(%): 38.57142857142858
+F-Measure(%): 24.88479262672811
+G-Measure(%): 26.616814431776522
+TruePositive: 27.0
+FalsePositive: 120.0
+TrueNegative: 0.0
+FalseNegative: 43.0
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+PK Evaluation
+Matched: 0.0
+Missed: 44.0
+Exp. Correct Segmentations: 0.0
+Total: 194.0
+Matches(%): 0.0
+Misses(%): 22.68041237113402
+Accuracy(%): 0.0
+Precision(%):0.0
+Recall(%): 0.0
+F-Measure(%): 0.0
+G-Measure(%): 0.0
+TruePositive: 0.0
+FalsePositive: 0.0
+TrueNegative: 0.0
+FalseNegative: 0.0
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+Window Diff Evaluation
+Matched: 0.0
+Missed: 131.0
+Exp. Correct Segmentations: 0.0
+Total: 534.0
+Matches(%): 0.0
+Misses(%): 24.531835205992508
+Accuracy(%): 0.0
+Precision(%):0.0
+Recall(%): 0.0
+F-Measure(%): 0.0
+G-Measure(%): 0.0
+TruePositive: 0.0
+FalsePositive: 0.0
+TrueNegative: 0.0
+FalseNegative: 0.0
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+WinPR
+Matched: 0.0
+Missed: 0.0
+Exp. Correct Segmentations: 0.0
+Total: 0.0
+Matches(%): NaN
+Misses(%): NaN
+Accuracy(%): 96.09215885947047
+Precision(%):35.324675324675326
+Recall(%): 70.10309278350515
+F-Measure(%): 46.97754749568221
+G-Measure(%): 49.76312883885929
+TruePositive: 136.0
+FalsePositive: 249.0
+TrueNegative: 7413.0
+FalseNegative: 58.0
+======================Evaluating: results/translit/first20_maxmatch_first_result.txt===========================
+Boundary Similarity Evaluation
+Matched: 70.0
+Missed: 0.0
+Exp. Correct Segmentations: 0.0
+Total: 89.0
+Matches(%): 78.65168539325843
+Misses(%): 0.0
+Accuracy(%): 0.0
+Precision(%):0.0
+Recall(%): 0.0
+F-Measure(%): 0.0
+G-Measure(%): 0.0
+TruePositive: 0.0
+FalsePositive: 0.0
+TrueNegative: 0.0
+FalseNegative: 0.0

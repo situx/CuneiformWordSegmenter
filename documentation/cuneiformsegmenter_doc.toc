@@ -1,0 +1,78 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Purpose}{3}{section.1.1}
+\contentsline {chapter}{\numberline {2}Getting Started}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}How to use it}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Data structure}{5}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Navigation and Options}{6}{section.2.2}
+\contentsline {subsubsection}{Classification}{6}{section*.2}
+\contentsline {subsubsection}{Input Method Engine}{6}{section*.3}
+\contentsline {subsubsection}{Visualisation}{6}{section*.4}
+\contentsline {chapter}{\numberline {3}Structure}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Packages and Classes}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Extensibility}{8}{section.3.2}
+\contentsline {chapter}{\numberline {4}Modules}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}CorpusHandlingModule}{9}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}General Attributes}{10}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}CorpusImportModule}{10}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Special Import Needs}{11}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}DictionaryModule}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Character Classes}{11}{subsection.4.2.1}
+\contentsline {subsubsection}{Language Specific Character Classes}{12}{section*.5}
+\contentsline {subsection}{\numberline {4.2.2}DictHandler}{12}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}New Dictionary}{12}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Adding External Resources}{12}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}EvaluationModule}{13}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Export}{13}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}SegmentationModule}{14}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Segmentation Method Collectors}{14}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Segmentation Method Collector Implementations}{14}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Segmentation Method Collectors for Machine Learning}{15}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}FeatureSets}{15}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}FeatureSet Generators}{15}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Generating a FeatureSet}{16}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Transliteration Module}{16}{section.4.6}
+\contentsline {section}{\numberline {4.7}Transcription Module}{17}{section.4.7}
+\contentsline {section}{\numberline {4.8}POSTagging Module}{17}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}POSDefinition File}{17}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Dictionary}{19}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}IME}{19}{subsection.4.8.3}
+\contentsline {section}{\numberline {4.9}Translation Module}{19}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Translator Classes}{19}{subsection.4.9.1}
+\contentsline {section}{\numberline {4.10}GUIModule}{20}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Internationalization}{20}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Title Screen}{20}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.3}Comparison Screen}{20}{subsection.4.10.3}
+\contentsline {subsubsection}{JToolTipArea}{21}{section*.6}
+\contentsline {subsection}{\numberline {4.10.4}Statistics Screen}{22}{subsection.4.10.4}
+\contentsline {subsubsection}{Result Tables}{22}{section*.7}
+\contentsline {subsubsection}{Graph}{22}{section*.8}
+\contentsline {section}{\numberline {4.11}Utilities}{22}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Libraries}{22}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Options}{22}{subsection.4.11.2}
+\contentsline {chapter}{\numberline {5}Resources and Data}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Naming Conventions}{24}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Preprocessing}{24}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}FeatureSets}{25}{subsection.5.1.2}
+\contentsline {subsubsection}{Model files}{25}{section*.9}
+\contentsline {subsection}{\numberline {5.1.3}Results}{26}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Corpora Data}{26}{section.5.2}
+\contentsline {section}{\numberline {5.3}Intermediate Format}{27}{section.5.3}
+\contentsline {section}{\numberline {5.4}Boundary Format}{27}{section.5.4}
+\contentsline {section}{\numberline {5.5}Target Language Formats}{28}{section.5.5}
+\contentsline {section}{\numberline {5.6}Dictionary Resources}{28}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Content}{29}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}Exports}{29}{section.5.7}
+\contentsline {section}{\numberline {5.8}Results}{29}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Boundaries}{29}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}Evaluation}{30}{subsection.5.8.2}
+\contentsline {subsection}{\numberline {5.8.3}Target Language}{30}{subsection.5.8.3}
+\contentsline {subsection}{\numberline {5.8.4}Transliteration}{30}{subsection.5.8.4}
+\contentsline {subsection}{\numberline {5.8.5}Transcription}{30}{subsection.5.8.5}
+\contentsline {chapter}{\numberline {6}Useful Future Improvements}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}SegmentationModule}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}TransliterationModule}{31}{section.6.2}
+\contentsline {section}{\numberline {6.3}POSTagging Module}{31}{section.6.3}
+\contentsline {section}{\numberline {6.4}TranslationModule}{32}{section.6.4}
+\contentsline {section}{\numberline {6.5}Input Method Engines}{32}{section.6.5}
+\contentsline {section}{\numberline {6.6}Exports}{32}{section.6.6}
+\contentsline {section}{\numberline {6.7}GUIModule}{32}{section.6.7}

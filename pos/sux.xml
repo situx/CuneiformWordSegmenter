@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+        <data>
+    <colors>
+	<tagcolor tag="DEFAULT" desc="default" matchorder="14" color="#C0C0C0"/>
+	<tagcolor tag="NE" desc="namedentity" matchorder="10" color="#ff2eb5ff"/>
+        <tagcolor tag="NA" desc="nounoradj" matchorder="11" color="#FFFF00"/>
+        <tagcolor tag="NN" desc="noun" matchorder="12" color="#895F33"/>
+        <tagcolor tag="CARD" desc="number" matchorder="9" color="#FFC0CB"/>	
+	<tagcolor tag="MOD" desc="modalprefix" matchorder="7" color="#A5A959"/>
+        <tagcolor tag="VV" desc="verb" matchorder="8" color="#00FF00"/>
+        <tagcolor tag="PREP" desc="agent" matchorder="6" color="#00FFFF"/>
+	<tagcolor tag="RELPRO" desc="relativepronoun" matchorder="5" color="#5FFF8C"/>
+        <tagcolor tag="PRO" desc="pronoun" matchorder="4" color="#0000FF"/>
+	<tagcolor tag="DET" desc="determinative" matchorder="3" color="#FFA500"/>
+        <tagcolor tag="PART" desc="particle" matchorder="2" color="#9370DB"/>
+        <tagcolor tag="CONJ" desc="conjunction" matchorder="1" color="#FF0000"/>
+	<tagcolor tag="POSS" desc="possessive" matchorder="0" color="#CFF1D1"/>
+	<tagcolor tag="AG" desc="agent" matchorder="13" color="#CFF1D1"/>
+    </colors>
+    <tags>
+      <tag desc="determinative" name="DET" equals="" regex="^(d-|disz-|dug-|e-|f-|gesz-|gisz-|hia-|id2-|in-|iri-|ki-|kur-|kusz-|la-|lu2-|lu2mesz-|m-|mesz-|mez-|mi-|munus-|muszen-|na4-|sig2-|sza10me-|Sza10mee-|sza10mei-|sza10mi-|szu-|ti-|tug2-|tug3-|u2-|ub-|uru-|uruda-|urudu-|usz-|ut-|zabar-)+" case="DET"/>
+
+	<!-- Verbs -->
+        <tag desc="particle" name="PART" equals="" regex="(-ene|-ne)$" case="PART" value="plural marker" />	
+	<!-- Possessive Particles -->
+	<tag desc="possessive" name="POSS" equals="" regex="(-gu|-ga)$" case="FIRST_SINGULAR" value="my" />
+	<tag desc="possessive" name="POSS" equals="" regex="(-zu|-za)$" case="SECOND_SINGULAR" value="yours" />
+	<tag desc="possessive" name="POSS" equals="" regex="(-a-ni|-a-na)$" case="THIRD_SINGULAR_MALE" value="his/her" />
+	<tag desc="possessive" name="POSS" equals="" regex="(-bi|-bi-a|-ba)$" case="THIRD_SINGULAR_FEMALE" value="its" />
+	<tag desc="possessive" name="POSS" equals="" regex="(-me)$" case="FIRST_PLURAL" value="our" />
+	<tag desc="possessive" name="POSS" equals="" regex="(-zu-ne-ne)$" case="SECOND_PLURAL" value="your" />
+	<tag desc="possessive" name="POSS" equals="" regex="((-a)?-ne-ne)$" case="THIRD_PLURAL" value="their" />
+	<!-- Personal Pronouns -->
+	<tag desc="pronoun" name="PRO" equals="" regex="^(ga2-e|ge)$" case="FIRST_SINGULAR" value="I" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(za-e|ze2)$" case="SECOND_SINGULAR" value="you" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(e-ne|a-ne)$" case="THIRD_SINGULAR" value="he,him,she,her" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(me-en-de3-en)$" case="FIRST_PLURAL" value="we" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(me-en-ze2-en)$" case="SECOND_PLURAL" value="you" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(e-ne-ne|a-ne-ne)$" case="THIRD_PLURAL" value="they" />
+	<!-- Interrogative Pronouns -->
+	<tag desc="pronoun" name="PRO" equals="a-ba-a3-m" regex="" case="" value="who is it" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^a-na-(asz|sze)?(-a3m)?$" case="" value="why" />
+	<tag desc="pronoun" name="PRO" equals="a-na-gin" regex="" case="" value="how" />
+	<tag desc="pronoun" name="PRO" equals="me-a" regex="" case="" value="where" />
+	<tag desc="pronoun" name="PRO" equals="me-sze3" regex="" case="" value="whither" />
+	<tag desc="pronoun" name="PRO" equals="me-ta" regex="" case="" value="whence" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(en-na-me-sze3|en-sze)$" case="" value="how long" />
+	<!-- Agent Particles -->
+	<tag desc="agent" name="AG" equals="" regex="-[n](-|$)" case="THIRD_SINGULAR_MALE" value="his/her" />
+	<!-- Relative Pronouns -->
+	<tag desc="relativepronoun" name="RELPRO" equals="lu2" regex="" case="" value="who" />
+	<tag desc="relativepronoun" name="RELPRO" equals="ni2g" regex="" case="" value="which" />
+	<tag desc="relativepronoun" name="RELPRO" equals="ki" regex="" case="" value="where" />
+	<tag desc="relativepronoun" name="RELPRO" equals="a-ba" regex="" case="" value="(the one) who" />
+	<tag desc="relativepronoun" name="RELPRO" equals="a-na" regex="" case="" value="(that) which" />
+	
+	
+	<!-- Numbers -->
+	<tag desc="number" name="CARD" equals="" regex="disz-disz+.*|^disz$" cunei="𒁹" case="NUMBER" value="1"/>
+        <tag desc="number" name="CARD" equals="" regex="^(min)-" case="NUMBER" value="2" />
+        <tag desc="number" name="CARD" equals="" regex="^(esz)-" case="NUMBER" value="3" />
+        <tag desc="number" name="CARD" equals="" regex="^(sa-lasz)-" case="NUMBER" value="3" />
+        <tag desc="number" name="CARD" equals="" regex="^(limmu)-" case="NUMBER" value="4" />
+        <tag desc="number" name="CARD" equals="" regex="^(i|ia)-" case="NUMBER" value="5" />
+        <tag desc="number" name="CARD" equals="asz" regex="" case="NUMBER" value="6" />
+        <tag desc="number" name="CARD" equals="umin" regex="" case="NUMBER" value="7" />
+        <tag desc="number" name="CARD" equals="ussu" regex="" case="NUMBER" value="8" />
+        <tag desc="number" name="CARD" equals="ilimmu" regex="" case="NUMBER" value="9" />
+        <tag desc="number" name="CARD" equals="" regex="^u-u+.*|^u$" case="NUMBER" value="10" />
+        <tag desc="number" name="CARD" equals="nisz" regex="" case="NUMBER" value="20" />
+        <tag desc="number" name="CARD" equals="u-szu" regex="" case="NUMBER" value="30" />
+        <tag desc="number" name="CARD" equals="ni-min" regex="" case="NUMBER" value="40" />
+        <tag desc="number" name="CARD" equals="nin-nu" regex="" case="NUMBER" value="50" />
+        <tag desc="number" name="CARD" equals="" regex="^(geszd)$" case="NUMBER" value="60" />
+	<!-- Interrogative Pronouns -->
+	<tag desc="pronoun" name="PRO" equals="a-ba" regex="" case="" value="who" />
+	<tag desc="pronoun" name="PRO" equals="a-na" regex="" case="" value="what" />	
+	<tag desc="pronoun" name="PRO" equals="me" regex="" case="" value="where" />
+	<tag desc="pronoun" name="PRO" equals="en" regex="" case="" value="when" />	
+	<!-- Demonstrative Pronouns -->
+	<tag desc="pronoun" name="PRO" equals="" regex="^(e|be)$" case="CONJ" value="this" />
+	<tag desc="conjunction" name="CONJ" equals="sze" regex="" case="CONJ" value="that (visible)" />	
+	<tag desc="conjunction" name="CONJ" equals="re" regex="" case="CONJ" value="that (invisible)" />
+	<!-- Declination Particles -->
+	<tag desc="conjunction" name="CONJ" equals="" regex="(-men)$" case="CONJ" value="first/second declination singular" />
+	<tag desc="conjunction" name="CONJ" equals="" regex="(-me-am)$" case="CONJ" value="third declination singular" />	
+	<tag desc="conjunction" name="CONJ" equals="" regex="(-menden)$" case="CONJ" value="first declination plural" />
+	<tag desc="conjunction" name="CONJ" equals="" regex="(-menzen)$" case="CONJ" value="second declination plural" />	
+	<tag desc="conjunction" name="CONJ" equals="" regex="(-mesz)$" case="CONJ" value="third declination plural" />
+	<!-- Modal Prefixes -->
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(nu-|la-|li-)" case="Negative" value="not" />
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(bara-)" case="Ventitive, Negative/Affirmative" value="Cannot" />	
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(na-)" case="Prohibitive" value="Do not" />
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(ga-|gi4-|gu2-)" case="Cohortative" value="May I" />	
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(ha-|he2-|hu-)" case="Precative" value="Should" />
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(sza-|u3-|a-|i-)" case="Prospective" value="After" />
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(szi-|sza-|sze-|szu-)" case="Contrapunctive" value="Therefore" />
+	<tag desc="modalprefix" name="MOD" equals="" regex="(^|-)(nu-usz-)" case="Frustrative" value="If only" />	
+	<tag desc="noun" name="NN" equals="" regex="((.*)-(a|e|ir|ak|da|ta|sze|gin)$|^[a-z]+$)" case="NOUN" value="noun" />
+	<tag desc="verb" name="VV" equals="" regex="^((nu-|la-|li-|bara-|na-|ga-|ha-|he-|sza-|u-|Ø-|iri-|nusz-)|(mu-)|(n-)|(ba-)|(a-|ra-|da-|ta-|szi-|ni-|bi-|e-)|(ma-|ra-|nna-|ba-|me-|nne-))+(.*)((-d|-ed)|(-(m)?en|-Ø|-me-am|-(m)?enden|-(m)?enzen|-(m)?esz|-(m)?ene|-e))*.*$" case="PART" value="verb" />
+	
+	<tag desc="namedentity" name="NE" equals="" regex="^(.*[A-Z][a-z]+-.*)$|^(d-|disz-|dug-|e-|f-|gesz-|gisz-|hia-|id2-|in-|iri-|ki-|kur-|kusz-|la-|lu2-|lu2mesz-|m-|mesz-|mez-|mi-|munus-|muszen-|na4-|sig2-|sza10me-|Sza10mee-|sza10mei-|sza10mi-|szu-|ti-|tug2-|tug3-|u2-|ub-|uru-|uruda-|urudu-|usz-|ut-|zabar-)+.*$" case="NE" value="namedentity"/>
+	<!-- Case Particles -->
+	<tag desc="particle" name="PART" equals="" regex="-a(-|$)" case="locative" />
+	<tag desc="particle" name="PART" equals="" regex="-e(-|$)" case="ergative or directive"  />
+	<tag desc="particle" name="PART" equals="" regex="-Ø(-|$)" case="absolutive" />
+	<tag desc="particle" name="PART" equals="" regex="(-ir|-ra)(-|$)" case="dative" />
+	<tag desc="particle" name="PART" equals="" regex="-ak(-|$)" case="genitive" />
+	<tag desc="particle" name="PART" equals="" regex="-da(-|$)" case="comitative" />
+	<tag desc="particle" name="PART" equals="" regex="-ta(-|$)" case="ablative-instrumental" />
+	<tag desc="particle" name="PART" equals="" regex="-sze(-|$)" case="terminative" />
+	<tag desc="particle" name="PART" equals="" regex="-gin(-|$)" case="equative" value="like" />
+	
+	</tags>
+        </data>

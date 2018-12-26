@@ -1,0 +1,77 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This table under LGPL
+### comments start with ### not single #
+### Derive from the format of SCIM Table, so you can modify the table from
+### scim-tables' table
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0### Begin Table definition.
+BEGIN_DEFINITION### License
+LICENSE = LGPL### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+UUID = a59c134a-6d7b-4f64-a2c4-6ab973f62bf4
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+### Just make your table version-able
+SERIAL_NUMBER = 20140628
+ICON = akkadian.svg
+NAME = AkkadianIPA 
+NAME.zh_CN = 形码
+NAME.zh_HK = 形碼
+NAME.zh_TW = 形碼### Description
+DESCRIPTION = Akkadian input engine table for IBus.
+LANGUAGES = de_DE
+AUTHOR = Timo Homburg, Goethe University Frankfurt am Main
+STATUS_PROMPT = CN
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.?!1234567890()":;#/### Layout
+LAYOUT = us
+MAX_KEY_LENGTH = 50
+
+### Use auto_commit mode as default
+AUTO_COMMIT = FALSE
+
+### Use full width punctuation by default
+DEF_FULL_WIDTH_PUNCT = TRUE
+### Not use full width letter by default
+DEF_FULL_WIDTH_LETTER = FALSE 
+
+### Whether user are allow to define phrase, default is true
+### You have to define the word construction rules below.
+### For input methods which do not input phrases, set this to False
+USER_CAN_DEFINE_PHRASE = TRUE
+
+### Whether support PinYin Mode, default is true.
+### this feature is just for Chinese, set it to False if your IM is not
+### Chinese.
+PINYIN_MODE = FALSE
+
+### If true then the phrases' frequencies will be adjusted dynamically
+### according your using frequency.
+DYNAMIC_ADJUST = TRUE
+
+### Some characters whose frequencies should be fix all the time, e.g.
+### some punctuations
+### NO_CHECK_CHARS =
+
+### Rules for constructing user defined phrase
+### "ce" stands for "ci equal", a Chinese English :), means "phrase length
+### equal to", thus ce2 -> phrase length equal to 2; and "ca" means "phrase
+### length equal or above", so ca4 -> phrase length equal or above 4.
+### p21 -> the 1st key of 2nd character in the phrase, and so on.
+### Each rule separate via ";".
+### Example below is a complete rule-set,
+### becuase [2,2] ∩ [3,3] ∩ [4,+∞] = [2,+∞], which is the range of length
+### of phrase. This have to be satisfied if you need ibus-table to build up
+### your own inputed phrase via your daily using.
+###RULES = ce2:p11+p12+p21+p22;ce3:p11+p21+p22+p31;ca4:p11+p21+p31+p41
+
+END_DEFINITION 
+
+### Begin Table data.
+### Format of every line whose formated in "input_keys\tphrase\tfreq\n" is an
+### entry.
+### From left to right, the 1st column are the input key combination that you
+### entered via keyboard; the 2nd column are presented character or phrase of
+### the key combination you want; the 3rd column are frequency of the character
+### or phrase. 
+BEGIN_TABLE 

@@ -1,0 +1,46 @@
+((Konjunktion)?(Präposition)?(Subjekt=Nomen|Pronomen|Named Entity)(ADJ)?(Zahl)?(Präposition)?(Objekt=Nomen|Pronomen|Named Entity)(ADJ)?(Zahl)?(Partikel)?(Prädikat))+
+      and            in                  garden                   small  100                                                                       la       verb
+      
+((Konjunktion)?(Präposition)?(Subjekt=Nomen|Pronomen|Named Entity)(ADJ)?(Zahl)?(Nebensatzbeginn)?(Präposition)?(Objekt=Nomen|Pronomen|Named Entity)(ADJ)?(Zahl)?(Partikel)?(Prädikat))+
+      and            in                  garden                   small  100       which   
+      
+
+((Prädikat)?(Präposition)?)+
+      and            in                  garden                   small  100       which         
+      
+      
+Subjekt:
+
+Nomen
+NE
+Pronomen
+
+(Nomen u3 Nomen)+
+(NE u3 NE)+
+(Pronomen u3 Pronomen)+
+
+(NE + Nomen + NE)+ (u3) (NE + Nomen + NE)+
+
+
++ Zahl + Adjektiv
+
+Präpositionalphrase:
+
+(Präpositon+Subjekt)+
+
+
+
+Verb:
+
+Partikel +Verb
+
+Verb+Präpositionalphrase
+
+Partikel+Verb+Präpositionalphrase
+
+
+
+
+
+
+

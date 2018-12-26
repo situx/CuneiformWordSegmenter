@@ -1,0 +1,33 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT signs (sign)+>
+<!ATTLIST signs
+  source CDATA #REQUIRED>
+
+<!ELEMENT sign (logogram|val)*>
+<!ATTLIST sign
+  HethZL CDATA #REQUIRED
+  LHA CDATA #REQUIRED
+  MesZL CDATA #REQUIRED
+  aBZL CDATA #REQUIRED
+  comments CDATA #IMPLIED
+  id ID #IMPLIED
+  see IDREFS #IMPLIED
+  sign CDATA #IMPLIED
+  signName CDATA #REQUIRED
+  utf8codepoint CDATA #REQUIRED
+  utf8name CDATA #REQUIRED>
+
+<!ELEMENT logogram (lemma,gloss)?>
+<!ATTLIST logogram
+  language NMTOKEN #IMPLIED>
+
+<!ELEMENT val (#PCDATA)>
+<!ATTLIST val
+  language NMTOKEN #REQUIRED>
+
+<!ELEMENT lemma (#PCDATA)>
+<!ATTLIST lemma>
+
+<!ELEMENT gloss (#PCDATA)>
+<!ATTLIST gloss>

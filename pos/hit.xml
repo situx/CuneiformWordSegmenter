@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+        <data>
+    <colors>
+	<tagcolor tag="DEFAULT" desc="default" matchorder="12" color="#C0C0C0"/>
+	<tagcolor tag="NE" desc="namedentity" matchorder="6" color="#ff2eb5ff"/>
+        <tagcolor tag="NA" desc="nounoradj" matchorder="11" color="#FFFF00"/>
+        <tagcolor tag="NN" desc="noun" matchorder="9" color="#895F33"/>
+        <tagcolor tag="CARD" desc="number" matchorder="8" color="#FFC0CB"/>	
+	<tagcolor tag="MOD" desc="modalprefix" matchorder="7" color="#A5A959"/>
+        <tagcolor tag="VV" desc="verb" matchorder="10" color="#00FF00"/>
+        <tagcolor tag="PREP" desc="agent" matchorder="5" color="#00FFFF"/>
+	<tagcolor tag="DET" desc="determinative" matchorder="4" color="#FFA500"/>
+        <tagcolor tag="PRO" desc="pronoun" matchorder="3" color="#0000FF"/>
+        <tagcolor tag="PART" desc="particle" matchorder="2" color="#9370DB"/>
+        <tagcolor tag="CONJ" desc="conjunction" matchorder="1" color="#FF0000"/>
+	<tagcolor tag="POSS" desc="possessive" matchorder="0" color="#CFF1D1"/>
+    </colors>
+        <groupconfigs>
+      <groupconfig tag="VV" desc="verb">
+	<!-- (la/li/le/lu for past tense or ni for plural) (Vocal before first root) (Vocal after first root) (ta-,te- for Perfect) -->
+	<group tag="VV" desc="verb" name="Case:  First Person Plural" regex="^(ni|nu)-$" group="2"/>
+	<group tag="VV" desc="verb" name="Tense: Past Tense" regex="^(li|la|le|lu)-$" group="2"/>
+	<group tag="VV" desc="verb" name="Case:  Third Person Singular" regex="^([^n]?i|u[0-9]?)(-)?$" group="3"/>
+	<group tag="VV" desc="verb" name="Case:  First Person Singular" regex="^(a|u)(-)?$" group="3"/>
+	<group tag="VV" desc="verb" name="Case:  Second Person Singular" regex="^(ta|tu)-$" group="3"/>
+	<group tag="VV" desc="verb" name="Tense: Past Tense" regex="(t-t)" group="4"/>
+	<group tag="VV" desc="verb" name="Tense: Perfect" regex="(ta|te)-" group="6"/>
+	<group tag="VV" desc="verb" name="Tense: Present/Future" regex="((.)[^-](.)|(.)-(.))" group="8"/>
+	<group tag="VV" desc="verb" name="Case:  Third Person Plural" regex="^(u2)$" group="10"/>
+	<group tag="VV" desc="verb" name="Case:  Second Person Plural" regex="^(a2)$" group="10"/>
+	<group tag="VV" desc="verb" name="Case:  Second Person Singular Female" regex="^(-i2)$" group="10"/>
+      </groupconfig>
+    </groupconfigs>
+    <tags>
+
+       <tag desc="nounoradj" name="NA" equals="" regex="((.)*-s)$" case="NOMINATIVE_SINGULAR"/>
+       <tag desc="nounoradj" name="NA" equals="" regex="((.)*-es)$" case="NOMINATIVE_PLURAL"/>
+       <tag desc="nounoradj" name="NA" equals="" regex="((.)*-e)$" case="VOCATIVE_SINGULAR_PLURAL"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-n)$" case="AKKUSATIVE_SINGULAR"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-us)$" case="AKKUSATIVE_PLURAL"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-as)$" case="GENITIVE_SINGULAR_PLURAL"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-i)$" case="DATIVE-LOCATIVE_SINGULAR"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-as)$" case="DATIVE-LOCATIVE_PLURAL"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-az(a)?)$" case="ABLATIVE_SINGULAR_PLURAL"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-anza)$" case="ERGATIVE_SINGULAR"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-antes)$" case="ERGATIVE_PLURAL"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-a)$" case="ALLATIVE_SINGULAR"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-as)$" case="ALLATIVE_PLURAL"/>
+	<tag desc="nounoradj" name="NA" equals="" regex="((.)*-it)$" case="INSTRUMENTAL_SINGULAR_PLURAL"/>
+	<!-- Personal Pronouns -->
+	<tag desc="pronoun" name="PRO" regex="^(u:k(-)?)" equals="" case="FIRST_SINGULAR_NOMINATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(ammuk)" equals="" case="FIRST_SINGULAR_AKKUSATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(amme:l)" equals="" case="FIRST_SINGULAR_GENITIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(ammuk)" equals="" case="FIRST_SINGULAR_LOCATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(ame:daz)" equals="" case="FIRST_SINGULAR_ABLATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(we:s)" equals="" case="FIRST_PLURAL_NOMINATIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(anza:s)" equals="" case="FIRST_PLURAL_AKKUSATIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(anze:l)" equals="" case="FIRST_PLURAL_GENITIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(anza:s)" equals="" case="FIRST_PLURAL_LOCATIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(anze:daz)$" equals="" case="FIRST_PLURAL_ABLATIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(zik)" equals="" case="SECOND_SINGULAR_NOMINATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(tuk)" equals="" case="SECOND_SINGULAR_AKKUSATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(tue:l)" equals="" case="SECOND_SINGULAR_GENITIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(tuk)" equals="" case="SECOND_SINGULAR_LOCATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(tue:daz)" equals="" case="SECOND_SINGULAR_ABLATIVE" value="I" />
+	<tag desc="pronoun" name="PRO" regex="^(sume:s)" equals="" case="SECOND_PLURAL_NOMINATIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(suma:s)" equals="" case="SECOND_PLURAL_AKKUSATIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(sume:l)" equals="" case="SECOND_PLURAL_GENITIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(sume:s)" equals="" case="SECOND_PLURAL_LOCATIVE" value="we" />
+	<tag desc="pronoun" name="PRO" regex="^(sume:daz)$" equals="" case="SECOND_PLURAL_ABLATIVE" value="we" />
+	<!-- Interrogative Pronouns -->
+	<tag desc="pronoun" name="PRO" equals="" regex="^(kuis)" case="" value="who" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(kuit)" case="" value="what" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(kuedani)" case="" value="whom" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(kuwat)" case="" value="why" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(kuwapit)" case="" value="where" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(mahhan)$" case="" value="how" />
+	<tag desc="pronoun" name="PRO" equals="" regex="^(en-na-me-sze3|en-sze)$" case="" value="how long" />
+	<!-- Conjunctions -->
+        <tag desc="conjunction" name="CONJ" equals="nam-ma" cunei="" regex="" case="CONJ" value="then" />
+	<tag desc="conjunction" name="CONJ" equals="" regex="^(nasma|nassu)$" case="CONJ" value="or" />
+	<tag desc="conjunction" name="CONJ" equals="" regex="^(ma:n)$" case="CONJ" value="whether" />
+	
+	<!-- Verbs -->
+	<tag desc="verb" name="VV" equals="" regex="(.)*(-mi|-si-zi|-weni|-teni|-anzi|-(n)?un|-s|-t(a)?|-wen|-t(e|i)n|-(e|i)r|-(a)?llu|-i|-t|-du|-weni|-andu)$" case="Mi-Verb Active"/>
+	<tag desc="verb" name="VV" equals="" regex="(.)*(-mi|-si-zi|-weni|-teni|-anzi|-(n)?un|-s|-t(a)?|-wen|-t(e|i)n|-(e|i)r|-(a)?llu|-i|-t|-du|-weni|-andu)$" case="Mi-Verb MedioPassive"/>
+	<tag desc="verb" name="VV" equals="" regex="(.)*(-mi|-si-zi|-weni|-teni|-anzi|-(n)?un|-s|-t(a)?|-wen|-t(e|i)n|-(e|i)r|-(a)?llu|-i|-t|-du|-weni|-andu)$" case="Hi-Verb Active"/>
+	<tag desc="verb" name="VV" equals="" regex="(.)*(-mi|-si-zi|-weni|-teni|-anzi|-(n)?un|-s|-t(a)?|-wen|-t(e|i)n|-(e|i)r|-(a)?llu|-i|-t|-du|-weni|-andu)$" case="Hi-Verb MedioPassive"/>
+	<tag desc="determinative" name="DET" equals="" regex="^(D-|DISZ-|DUG-|E-|F-|GESZ-|GISZ-|HIA-|ID2-|IN-|IRI-|KI-|KUR-|KUSZ-|LA-|LU2-|LU2MESZ-|M-|MESZ-|MEZ-|MI-|MUNUS-|MUSZEN-|NA4-|SIG2-|SZA10ME-|SZA10MEE-|SZA10MEI-|SZA10MI-|SZU-|TI-|TUG2-|TUG3-|U2-|UB-|URU-|URUDA-|URUDU-|USZ-|UT-|ZABAR-)+" case="DET"/>
+
+	<tag desc="namedentity" name="NE" equals="" regex="^(D-|DISZ-|DUG-|E-|F-|GESZ-|GISZ-|HIA-|ID2-|IN-|IRI-|KI-|KUR-|KUSZ-|LA-|LU2-|LU2MESZ-|M-|MESZ-|MEZ-|MI-|MUNUS-|MUSZEN-|NA4-|SIG2-|SZA10ME-|SZA10MEE-|SZA10MEI-|SZA10MI-|SZU-|TI-|TUG2-|TUG3-|U2-|UB-|URU-|URUDA-|URUDU-|USZ-|UT-|ZABAR-)+[A-Z]?[a-z0-9,-]+$" case="NE"/>
+<tag desc="noun" name="NN" equals="" regex="^.*(A|A2|AB|AD|AG|AG2|AH|AK|AL|ALAM|ALIM|AM|AMA|AMAR|AN|ANSZE|AP|APIN|AR|ARAD2|ASZ|ASZ2|AT,|AZ|BA|BABBAR|BAD|BAD3|BAL|BAN|BANSZUR|BAR|BE|BE2|BI|BI2|BIL|BU|BUGIN|BURU14|D|DA|DAH|DAL|DAM|DAR|DARA3|DE2|DI|DIB|DIDLI|DIL|DIN|DINGIR|DISZ|DU|DU10|DU3|DUB|DUB2|DUG|DUGUD|DUL|DUMU|E|E2|EDIN|EGER|EGIR|EME|EN|EP|ERIN|ERIN2|ESI|ESZ2|EZEM|GA|GA2|GAB|GADA|GAG|GAL|GAL2|GAM|GAN|GAN2|GAR|GAR3|GASZAN|GAZ|GESZ|GESZTIN|GI|GI4|GIBIL|GID2|GIG|GIGIR|GIN2|GIN3|GIR2|GIR3|GIRI3|GISZ|GU|GU2|GU4|GU5|GU7|GUB|GUG|GUL|GUN3|GUR|GUR11|HA|HAR|HASZHUR|HE2|HI|HU|HUL|HUR|I|I3|IA|IB|IB2|ID|IG|IGI|IL3|IM|IN|IN4|INIM|IR|IRI|IS,|ISZ|ISZIB|ISZKUR|ITI|IZ|IZI|KA|KA2|KA4|KAK|KAL|KAM|KAM2|KAM3|KAR|KAR2|KASKAL|KASZ|KI|KIN|KIRI6|KISZIB|KISZIB3|KU|KU3|KU5|KUL|KUM|KUR|KUR2|KUSZ|LA|LA2|LAL|LAL3|LAM|LAM2|LAMMA|LI|LI2|LIM|LISZ|LU|LU2|LUGAL|LUH|LUL|MA|MA2|MAH|MAL|MAR|MASZ|MASZ2|ME|ME2|ME3|MESZ|MI|MIN|MU|MUN|MUNUS|MUSZ|MUSZEN|NA|NA2|NA4|NAGAR|NAM|NE|NI|NI2|NIG2|NIGA|NIGIN2|NIM|NIN|NINDA|NU|NUMUN|NUN|PA|PAN|PESZ3|PI|PI2|PU|PU2|QE2|QI2|RA|RAB3|RE|RI|RIG2|RU|S,A|S,E|S,U2|SA|SA3|SAG|SAGSZU|SAHAR|SAR|SE3|SI|SI2|SI3|SIG|SIG17|SIG2|SIG3|SIG4|SIG5|SIKI|SIL|SILA|SILA3|SIPA|SIR2|SU|SUD|SUKKAL|SZA|SZA10|SZA2|SZA3|SZAB|SZAH|SZE|SZEN|SZESZ|SZI|SZID|SZIM|SZIR3|SZU|SZU2|T,I|TA|TAB|TAG|TAG2|TAH|TAL|TAR|TASZKARIN|TE|TESZ2|TI|TIL|TIM|TIR|TU|TU4|TUG2|TUK|TUK2|TUKUL|TUL2|TUM|TUR|U|U2|U3|U4|UB|UBUR3|UD|UD5|UDU|UG|UGULA|UM|UN|UR|UR2|UR5|URTA|URU|URUDU|US2|USAN|USZ|USZ2|UT|UTU|UZ|UZU|WA|ZA|ZA3|ZI|ZU|ZU2|ZUM|ZUR).*$" case="SUM"/>    
+	
+	</tags>
+        </data> 

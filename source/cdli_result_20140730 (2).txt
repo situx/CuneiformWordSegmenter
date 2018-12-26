@@ -1,0 +1,14 @@
+
+Fatal error: Allowed memory size of 536870912 bytes exhausted (tried to allocate 104 bytes) in /Library/WebServer/Documents/cdli/search/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php on line 2543
+
+Call Stack:
+    0.0005     669952   1. {main}() /Library/WebServer/Documents/cdli/search/download_data_new.php:0
+    0.0620   12483328   2. Search->getResults() /Library/WebServer/Documents/cdli/search/download_data_new.php:42
+    3.2946   56857256   3. Doctrine\ORM\AbstractQuery->getResult() /Library/WebServer/Documents/cdli/search/utils/Search.php:370
+    3.2946   56857416   4. Doctrine\ORM\AbstractQuery->execute() /Library/WebServer/Documents/cdli/search/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php:574
+   13.9896  237237632   5. Doctrine\ORM\Internal\Hydration\AbstractHydrator->hydrateAll() /Library/WebServer/Documents/cdli/search/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php:804
+   13.9896  237240320   6. Doctrine\ORM\Internal\Hydration\ObjectHydrator->hydrateAllData() /Library/WebServer/Documents/cdli/search/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/AbstractHydrator.php:140
+   22.0750  536647592   7. Doctrine\ORM\Internal\Hydration\ObjectHydrator->hydrateRowData() /Library/WebServer/Documents/cdli/search/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/ObjectHydrator.php:179
+   22.0753  536655720   8. Doctrine\ORM\Internal\Hydration\ObjectHydrator->getEntity() /Library/WebServer/Documents/cdli/search/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/ObjectHydrator.php:528
+   22.0753  536655584   9. Doctrine\ORM\UnitOfWork->createEntity() /Library/WebServer/Documents/cdli/search/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/ObjectHydrator.php:280
+

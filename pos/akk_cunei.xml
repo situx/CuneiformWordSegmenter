@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+        <data>
+    <colors>
+	<tagcolor tag="DEFAULT" desc="default" color="#C0C0C0"/>
+        <tagcolor tag="CARD" desc="number" color="#FFC0CB"/>
+	<tagcolor tag="NE" desc="namedentity" color="#ff2eb5ff"/>
+        <tagcolor tag="DET" desc="determinative" color="#FFA500"/>
+        <tagcolor tag="NA" desc="nounoradj" color="#FFFF00"/>
+        <tagcolor tag="NN" desc="noun" color="#895F33"/>	
+
+	<tagcolor tag="IP" desc="indefinitepronoun" color="#A5A959"/>
+        <tagcolor tag="VV" desc="verb" color="#00FF00"/>
+        <tagcolor tag="PREP" desc="preposition" color="#00FFFF"/>
+        <tagcolor tag="PRO" desc="pronoun" color="#0000FF"/>
+        <tagcolor tag="PART" desc="particle" color="#9370DB"/>
+        <tagcolor tag="CONJ" desc="conjunction" color="#FF0000"/>
+	<tagcolor tag="PRE" desc="precative" color="#CFF1D1"/>
+    </colors>
+    <tags>
+      <tag desc="particle" name="PART" equals="" regex="^(𒐼)$" case="PART" cunei="sza" value="relative clause" />
+      <tag desc="preposition" name="PREP" equals="" regex="^(𒐊𒉌)$" case="PREP" cunei="i-na" value="in" />
+
+	</tags>
+        </data>

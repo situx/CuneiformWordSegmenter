@@ -1,0 +1,1414 @@
+<?xml version="1.0"?>
+        <data>
+    <colors>
+	<tagcolor tag="DEFAULT" desc="default" color="#C0C0C0"/>
+        <tagcolor tag="CARD" desc="number" color="#FFC0CB"/>
+        <tagcolor tag="DET" desc="determinative" color="#FFA500"/>
+        <tagcolor tag="NN" desc="nounoradj" color="#FFFF00"/>
+        <tagcolor tag="NE" desc="namedentity" color="#ff2eb5ff"/>
+        <tagcolor tag="VV" desc="verb" color="#00FF00"/>
+        <tagcolor tag="PREPOS" desc="preposition" color="#00FFFF"/>
+        <tagcolor tag="PRO" desc="pronoun" color="#0000FF"/>
+        <tagcolor tag="PART" desc="particle" color="#9370DB"/>
+        <tagcolor tag="COND" desc="conditional" color="#FF0000"/>
+    </colors>
+    <tags>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-um)$" case="NOMINATIVE_SINGULAR"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-at-um)$" case="NOMINATIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-t-um)$" case="NOMINATIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-tum)$" case="NOMINATIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-im)$" case="GENITIVE_SINGULAR"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-at-im)$" case="GENITIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-t-im)$" case="GENITIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-tim)$" case="GENITIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-am)$" case="ACCUSATIVE_SINGULAR"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-at-am)$" case="ACCUSATIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-t-am)$" case="ACCUSATIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-tam)$" case="ACCUSATIVE_SINGULAR_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-an)$" case="NOMINATIVE_DUAL"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-at-aan)$" case="NOMINATIVE_DUAL_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-t-aan)$" case="NOMINATIVE_DUAL_FEMALE"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-in)$" case="OBLIQUE_DUAL"/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-at-iin)$" case="OBLIQUE_DUAL_FEMALE" value=""/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-t-iin)$" case="OBLIQUE_DUAL_FEMALE" value=""/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-uu)$" case="NOMINATIVE_PLURAL" value=""/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-uut-um)$" case="NOMINATIVE_PLURAL" value=""/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-aat-um)$" case="NOMINATIVE_PLURAL_FEMALE" value=""/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-ii)$" case="OBLIQUE_PLURAL" value=""/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-uut-im)$" case="OBLIQUE_PLURAL" value=""/>
+        <tag desc="nounoradj" name="NN" equals="" regex="((.)*-aat-im)$" case="NOMINATIVE_PLURAL_FEMALE" value=""/>
+        <tag desc="number" name="CARD" equals="" regex="^(disz)$" case="NUMBER" value="1"/>
+	<tag desc="determinative" name="DET" equals="" regex="(disz)-" case=""/>
+	<tag desc="number" name="CARD" equals="isz-ten" regex="" case="NUMBER" value="1"/>
+        <tag desc="number" name="CARD" equals="asz" regex="" case="NUMBER" value="1"/>
+        <tag desc="number" name="CARD" equals="min" regex="" case="NUMBER" value="2" />
+        <tag desc="number" name="CARD" equals="szi-na" regex="" case="NUMBER" value="2" />
+        <tag desc="number" name="CARD" equals="esz" regex="" case="NUMBER" value="3" />
+        <tag desc="number" name="CARD" equals="sa-lasz" regex="" case="NUMBER" value="3" />
+        <tag desc="number" name="CARD" equals="limmu" regex="" case="NUMBER" value="4" />
+        <tag desc="number" name="CARD" equals="erbe" regex="" case="NUMBER" value="4" />
+        <tag desc="number" name="CARD" equals="ia" regex="" case="NUMBER" value="5" />
+        <tag desc="number" name="CARD" equals="ha-misz" regex="" case="NUMBER" value="5" />
+        <tag desc="number" name="CARD" equals="asz" regex="" case="NUMBER" value="6" />
+        <tag desc="number" name="CARD" equals="sze-disz" regex="" case="NUMBER" value="6" />
+        <tag desc="number" name="CARD" equals="imin" regex="" case="NUMBER" value="7" />
+        <tag desc="number" name="CARD" equals="sebe" regex="" case="NUMBER" value="7" />
+        <tag desc="number" name="CARD" equals="ussu" regex="" case="NUMBER" value="8" />
+        <tag desc="number" name="CARD" equals="samane" regex="" case="NUMBER" value="8" />
+        <tag desc="number" name="CARD" equals="ilimmu" regex="" case="NUMBER" value="9" />
+        <tag desc="number" name="CARD" equals="ti-sze" regex="" case="NUMBER" value="9" />
+        <tag desc="number" name="CARD" equals="u" regex="" case="NUMBER" value="10" />
+        <tag desc="number" name="CARD" equals="e-szer" regex="" case="NUMBER" value="10" />
+        <tag desc="number" name="CARD" equals="u-disz" regex="" case="NUMBER" value="11" />
+        <tag desc="number" name="CARD" equals="isz-ten-sze-ret" regex="" case="NUMBER" value="11" />
+        <tag desc="number" name="CARD" equals="sa-lasz-szer" regex="" case="NUMBER" value="13" />
+        <tag desc="number" name="CARD" equals="se-be-szer" regex="" case="NUMBER" value="17" />
+        <tag desc="number" name="CARD" equals="nisz" regex="" case="NUMBER" value="20" />
+        <tag desc="number" name="CARD" equals="esz-ra" regex="" case="NUMBER" value="20" />
+        <tag desc="number" name="CARD" equals="u-szu" regex="" case="NUMBER" value="30" />
+        <tag desc="number" name="CARD" equals="sza-la-sza" regex="" case="NUMBER" value="30" />
+        <tag desc="number" name="CARD" equals="ni-min" regex="" case="NUMBER" value="40" />
+        <tag desc="number" name="CARD" equals="er-ba" regex="" case="NUMBER" value="40" />
+        <tag desc="number" name="CARD" equals="nin-nu" regex="" case="NUMBER" value="50" />
+        <tag desc="number" name="CARD" equals="ham-sza" regex="" case="NUMBER" value="50" />
+        <tag desc="number" name="CARD" equals="gisz" regex="" case="NUMBER" value="60" />
+        <tag desc="number" name="CARD" equals="" regex="^(gesz)$" case="NUMBER" value="60" />
+        <tag desc="number" name="CARD" equals="szu-szi" regex="" case="NUMBER" value="60" />
+        <tag desc="number" name="CARD" equals="me'at" regex="" case="NUMBER" value="100" />
+        <tag desc="number" name="CARD" equals="ge-szu" regex="" case="NUMBER" value="600" />
+        <tag desc="number" name="CARD" equals="nerum" regex="" case="NUMBER" value="600" />
+        <tag desc="number" name="CARD" equals="lim" regex="" case="NUMBER" value="1000" />
+        <tag desc="number" name="CARD" equals="limum" regex="" case="NUMBER" value="1000" />
+        <tag desc="number" name="CARD" equals="szar" regex="" case="NUMBER" value="3600" />
+        <tag desc="number" name="CARD" equals="szarum" regex="" case="NUMBER" value="3600" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(a-na)" case="NUMBER" value="to" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(a-di)" case="NUMBER" value="until" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(asz-szu)" case="NUMBER" value="concerning" />
+	<tag desc="preposition" name="PREP" equals="" regex="^(asz-szum)" case="NUMBER" value="concerning" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(e-li)" case="NUMBER" value="on" />
+	<tag desc="preposition" name="PREP" equals="" regex="^(e-le-en)" case="NUMBER" value="above" />
+	<tag desc="preposition" name="PREP" equals="" regex="^(i-nu-ma)" case="NUMBER" value="when"/>
+	<tag desc="preposition" name="PREP" equals="" regex="^(i-nu-u-ma)" case="NUMBER" value="when"/>
+	<tag desc="preposition" name="PREP" equals="" regex="^(e-nu-u-ma)" case="NUMBER" value="when"/>
+	<tag desc="preposition" name="PREP" equals="" regex="^(e-nu-ma)" case="NUMBER" value="when"/>	
+	<tag desc="preposition" name="PREP" equals="" regex="^(i-na)" cunei=" 𒐊𒉌" case="NUMBER" value="in" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(isz-tu)" case="NUMBER" value="from" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(it-ti)" case="NUMBER" value="with" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(ki-ma)" case="NUMBER" value="like,as" />
+	<tag desc="preposition" name="PREP" equals="" regex="^(ki-mu)" case="NUMBER" value="like,as" />
+        <tag desc="preposition" name="PREP" equals="" regex="^(ki-i-ma)" case="NUMBER" value="like,as" />
+	<tag desc="preposition" name="PREP" equals="" regex="^(ma-la)" case="NUMBER" value="according to" />
+	<tag desc="preposition" name="PREP" equals="" regex="^(ma-ḫar)" case="NUMBER" value="according to" />	
+	<tag desc="preposition" name="PREP" equals="" regex="^(pa-ni)" case="NUMBER" value="in front of"/>
+        <tag desc="preposition" name="PREP" equals="" regex="^(pa-a-ni)" case="NUMBER" value="in front of"/>
+        <tag desc="preposition" name="PREP" equals="" regex="^(wa-ar-ki)" case="NUMBER" value="after,behind" />
+	<tag desc="pronoun" name="PRO" equals="an-ni-tum" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="an-ni-tu-um" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="an-num" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="an-nu-um" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="ul-lum" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="ul-lu-um" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="ul-li-tum" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="ul-li-i-tum" regex="" case=""/>
+        <tag desc="pronoun" name="PRO" equals="a-na-ku" regex="" case="FIRST_SINGULAR_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="ia-ti" regex="" case="FIRST_PLURAL_GENAKK" value="" />
+        <tag desc="pronoun" name="PRO" equals="ia-szi-im" regex="" case="FIRST_PLURAL_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="a-na-ku-i" regex="" case="FIRST_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="a-na-ku-ia" regex="" case="FIRST_SINGULAR_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="a-na-ku-ni" regex="" case="FIRST_SINGULAR_AKKUSATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="a-na-ku-am" regex="" case="FIRST_SINGULAR_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="a-na-kum" regex="" case="FIRST_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="a-na-ku-m" regex="" case="FIRST_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="a-na-ku-nim" regex="" case="FIRST_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="" regex="^(at-ta)" case="SECOND_SINGULAR_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="^(ka-ti)" regex="" case="SECOND_SINGULAR_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="ka-a-ti" regex="" case="SECOND_SINGULAR_GENAKK" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ta-ka" regex="" case="SECOND_SINGULAR_GENAKK" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ta-kum" regex="" case="SECOND_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ta-ku-um" regex="" case="SECOND_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ti" regex="" case="SECOND_SINGULAR_NOMINATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ti-ki" regex="" case="SECOND_SINGULAR_GENITIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ti-kim" regex="" case="SECOND_SINGULAR_AKKUSATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ti-ki-im" regex="" case="SECOND_SINGULAR_AKKUSATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="^(szu-u2)" regex="" case="THIRD_SINGULAR_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-u2-szu" regex="" case="THIRD_SINGULAR_GENITIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-u2-szu" regex="" case="THIRD_SINGULAR_AKKUSATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-u2-szum" regex="" case="THIRD_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-u2-szu-um" regex="" case="THIRD_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="^(szi-i)" regex="" case="THIRD_SINGULAR_NOMINATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-a-ti" regex="" case="THIRD_SINGULAR_GENAKK" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-a-szi-im" regex="" case="THIRD_SINGULAR_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="^(ni-nu)" regex="" case="FIRST_PLURAL_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-tu-nu" regex="" case="SECOND_PLURAL_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="at-ti-na" regex="" case="SECOND_PLURAL_NOMINATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="^(szu-nu)" regex="" case="THIRD_PLURAL_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="^(szi-na=" regex="" case="THIRD_PLURAL_NOMINATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="ni-a-ti" regex="" case="FIRST_PLURAL_GENAKK" value="" />
+        <tag desc="pronoun" name="PRO" equals="ni-a-szi-im" regex="" case="FIRST_PLURAL_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="ku-nu-ti" regex="" case="SECOND_PLURAL_GENAKK" value="" />
+        <tag desc="pronoun" name="PRO" equals="ku-nu-szi-im" regex="" case="SECOND_PLURAL_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="ki-na-ti" regex="" case="SECOND_PLURAL_GENAKK_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="ki-na-szi-im" regex="" case="SECOND_PLURAL_DATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-nu" regex="" case="THIRD_PLURAL_NOMINATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szi-na" regex="" case="THIRD_PLURAL_NOMINATIVE_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-nu-ti" regex="" case="THIRD_PLURAL_GENAKK" value="" />
+        <tag desc="pronoun" name="PRO" equals="szi-na-ti" regex="" case="THIRD_PLURAL_GENAKK_FEMALE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szu-nu-szi-im" regex="" case="THIRD_PLURAL_DATIVE" value="" />
+        <tag desc="pronoun" name="PRO" equals="szi-na-szi-im" regex="" case="FIRST_PLURAL_DATIVE_FEMALE" value="" />
+        <tag desc="conditional" name="COND" equals="szum-ma" regex="" case="NUMBER" value="if" />
+        <tag desc="conditional" name="COND" equals="szum-man" regex="" case="NUMBER" value="if only" />
+        <tag desc="particle" name="PART" equals="" regex="(mesz)$" case="PART" value="plural" />
+        <tag desc="particle" name="PART" equals="" regex="^(la-ma)" case="PART" value="before" />
+        <tag desc="particle" name="PART" equals="" regex="^(sza)" case="PART" value="relative clause" />
+        <tag desc="particle" name="PART" equals="" regex="^(la)" case="PART" value="negation" />
+        <tag desc="particle" name="PART" equals="" regex="^(lu2)[$|-]" case="PART" value="person" />
+        <tag desc="particle" name="PART" equals="" regex="^(lu)[$|-]" case="PART" value="or" />
+        <tag desc="particle" name="PART" equals="" regex="^(u3)$" case="PART" value="and" />
+        <tag desc="particle" name="PART" equals="" regex="^(ma-la)" case="NUMBER" value="as much as" />
+        <tag desc="particle" name="PART" equals="" regex="^(ul)" case="PART" value="negation" />
+        <tag desc="particle" name="PART" equals="" regex="^(e)$" case="PART" value="prohibition" />
+        <tag desc="particle" name="PART" equals="" regex="(munus)" case="PART" value="female" />
+        <tag desc="particle" name="PART" equals="" regex="^(mu)" case="PART" value="young man" />
+        <tag desc="particle" name="PART" equals="" regex="(lugal)" case="PART" value="king" />
+        <tag desc="particle" name="PART" equals="" regex="(egir)" case="PART" value="princess" />
+        <tag desc="particle" name="PART" equals="" regex="(na4)" case="PART" value="male" />
+        <tag desc="particle" name="PART" equals="" regex="^(dumu)" case="PART" value="child" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[b{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[d{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[g{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[g{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[g{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[h{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[k{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[k{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[k{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[k{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[k{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[k{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[l{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[l{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[l{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[l{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[l{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[l{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[m{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[m{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[m{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[n{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[n{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[n{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[n{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[p{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[p{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[p{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[q{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[q{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[z{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[z{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[z{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[z{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[sz{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[sz{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[sz{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[sz{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s,{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s,{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s,{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s,{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s,{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[s,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t,{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?(ta-)?[t,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[d{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[d{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[d{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[d{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[h{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[l{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[l{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[l{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[l{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[q{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[q{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[q{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[q{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[s{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[s{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[s{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[t{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[t{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[z{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[sz{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[sz{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[s,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[s,{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[t,{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[b]-(ta-)?[t,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[b{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[g{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[h{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[k{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[k{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[l{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[l{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[l{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[l{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[m{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[m{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[p{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[q{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[q{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[sz{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[d]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[d{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[d{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[h{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[l{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[l{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[l{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[l{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[m{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[m{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[m{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[n{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[n{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[z{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[z{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[z{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[g]-(ta-)?[s,{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[d{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[d{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[d{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[d{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[k{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[p{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[p{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[q{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[z{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[z{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s,{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s,{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s,{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t,{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t,{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[h]-(ta-)?[t,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[j]-(ta-)?[n{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[j]-(ta-)?[s,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[d{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[d{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[d{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[l{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[l{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[t{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[t{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[t{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[z{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[z{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[z{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[k]-(ta-)?[t,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[g{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[h{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[h{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[h{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[h{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[h{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[h{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[k{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[k{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[k{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[m{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[m{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[p{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[p{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[q{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[q{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[q{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[s{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[t{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[z{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[z{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[l]-(ta-)?[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[d{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[d{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[g{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[g{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[g{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[g{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[h{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[h{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[h{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[k{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[k{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[k{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[q{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[q{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[q{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[t{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[t{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[t{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[z{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[z{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[z{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s,{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s,{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[m]-(ta-)?[t,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[g{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[g{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[g{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[g{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[g{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[g{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[k{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[l{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[q{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[q{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[q{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[q{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[q{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[r{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[w][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[w{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[z{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[z{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[z{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[z{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[z{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[z{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s,{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t,{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[n]-(ta-)?[t,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[g{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[g{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[h{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[h{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[h{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[n{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[n{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[q{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[q{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[z{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s,{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s,{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s,{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t,{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[p]-(ta-)?[t,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[d{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[d{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[l{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[l{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[n{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[p{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[t{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[t{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[t{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[t{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[sz{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[t,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[q]-(ta-)?[t,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[d{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[d{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[g{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[g{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[g{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[g{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[g{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[j{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[k{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[k{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[k{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[k{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[k{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[m{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[m{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[p{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[p{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[p{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[p{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[p{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[q{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[q{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[q{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[q{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[q{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[sz{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[sz{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[sz{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[sz{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s,{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s,{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t,{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[r]-(ta-)?[t,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[b{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[b{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[b{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[d{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[d{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[g{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[k{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[m{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[m{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[n{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[n{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[n{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[n{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[n{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[q{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[q{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[q{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[t{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[t,{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s]-(ta-)?[t,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[b{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[d{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[g{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[h{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[k{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[k{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[l{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[l{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[m{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[m{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[p{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[q{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[q{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[z{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[sz{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[b{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[b{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[k{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[k{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[k{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[k{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[l{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[m{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[n{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[p{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[p{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[p{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[q{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[r{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[t{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[t{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[z{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[sz{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[sz{1-2}][aeiu]-[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[sz{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[sz{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s,{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s,{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[w]-(ta-)?[s,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[k{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[k{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[l{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[m{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[n{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[n{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[q{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[q{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[q{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[q{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[r{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[z]-(ta-)?[z][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[d{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[d{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[d{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[g{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[g{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[g{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[g{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[g{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[g{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[g{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[k{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[g][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[n{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[n{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[n{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[n{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[n{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[n{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[q{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[q{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[q{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[q{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[s{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t{1-2}][aeiu]-[q][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[sz{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t,{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t,{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t,{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[sz]-(ta-)?[t,{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[b{1-2}][aeiu]-[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[b{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[b{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[b{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[b{1-2}][aeiu]-[t,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[d{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[d{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[h{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[h{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[j][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[l{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[l{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[l{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[l{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[m{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[m{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[m{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[m{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[n{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[p{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[p{1-2}][aeiu]-[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[k][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[t][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[r{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[s,]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[b][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[b{1-2}][aeiu]-[h][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[b{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[h{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[h{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[l{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[m{1-2}][aeiu]-[m][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[m{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[n][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[n{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[p{1-2}][aeiu]-[l][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[p{1-2}][aeiu]-[p][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[p{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[p{1-2}][aeiu]-[sz][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[p{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[r{1-2}][aeiu]-[d][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[r{1-2}][aeiu]-[r][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[r{1-2}][aeiu]-[s][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[r{1-2}][aeiu]-[s,][ui]?.*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[r{1-2}][aeiu].*$)" case="VERB" value="" />
+<tag desc="verb" name="VV" equals="" regex="(^(l[aeiu]-)?[aeiu]?[t,]-(ta-)?[w{1-2}][aeiu].*$)" case="VERB" value="" />
+    </tags>
+        </data>
