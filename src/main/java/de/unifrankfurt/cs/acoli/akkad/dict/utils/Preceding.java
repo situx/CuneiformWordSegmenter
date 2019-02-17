@@ -22,7 +22,7 @@
 
 package de.unifrankfurt.cs.acoli.akkad.dict.utils;
 
-import com.sun.xml.internal.txw2.output.IndentingXMLStreamWriter;
+import com.sun.xml.txw2.output.IndentingXMLStreamWriter;
 import de.unifrankfurt.cs.acoli.akkad.util.Tuple;
 import de.unifrankfurt.cs.acoli.akkad.util.enums.util.Tags;
 
