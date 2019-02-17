@@ -22,7 +22,7 @@
 
 package de.unifrankfurt.cs.acoli.akkad.dict.dicthandler.asian;
 
-import com.sun.xml.internal.txw2.output.IndentingXMLStreamWriter;
+import com.sun.xml.txw2.output.IndentingXMLStreamWriter;
 import de.unifrankfurt.cs.acoli.akkad.dict.chars.LangChar;
 import de.unifrankfurt.cs.acoli.akkad.dict.chars.PositionableChar;
 import de.unifrankfurt.cs.acoli.akkad.dict.chars.asian.CNChar;

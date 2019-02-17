@@ -22,7 +22,7 @@
 
 package de.unifrankfurt.cs.acoli.akkad.dict.pos.util;
 
-import com.sun.xml.internal.txw2.output.IndentingXMLStreamWriter;
+import com.sun.xml.txw2.output.IndentingXMLStreamWriter;
 import de.unifrankfurt.cs.acoli.akkad.methods.Methods;
 import de.unifrankfurt.cs.acoli.akkad.util.enums.methods.CharTypes;
 import de.unifrankfurt.cs.acoli.akkad.util.enums.methods.TransliterationMethod;
