@@ -20,7 +20,14 @@
         </plugins>
     </build>
     <dependencies>
-    <dependency>
+        <!-- https://mvnrepository.com/artifact/com.sun.xml.txw2/txw2 -->
+        <dependency>
+            <groupId>com.sun.xml.txw2</groupId>
+            <artifactId>txw2</artifactId>
+            <version>20110809</version>
+        </dependency>
+
+        <dependency>
         <groupId>net.htmlparser.jericho</groupId>
         <artifactId>jericho-html</artifactId>
         <version>3.4</version>
